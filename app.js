@@ -31,11 +31,11 @@ app.post("/", function(req, res){
   
   const jsonData = JSON.stringify(data);
   
-  const url = "https://us8.api.mailchimp.com/3.0/lists/279ea1365d";
+  const url = "https://us8.api.mailchimp.com/3.0/lists/";
 
   const options = {
     method: "POST",
-    auth: "vedant1:9570cf905d7893d50f783ea8df767963-us8"
+    auth: ""
   }
 
   const request = https.request(url, options, function(response) {
@@ -70,9 +70,3 @@ app.listen(3000, function(){
 
 
 
-//API key 
-//9570cf905d7893d50f783ea8df767963-us8
-
-
-//List ID
-//279ea1365d
